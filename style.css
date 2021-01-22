@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+body{
+    background-color: rgb(68, 158, 158);
+}
+
+.container{
+    height: 800px;
+    position: relative;
+    font-family: 'Potta One', cursive;
+}
+
+.box-center{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+#button{
+    background-color: rgb(84, 102, 85);
+    padding: 5px 70px 5px 70px;
+}
+
+@media screen and (max-width: 770px) {
+    button,.btn, span {
+      padding: 0px;
+      margin-left: -10px;
+    }
+  }
