@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
 body{
     background-color: rgb(68, 158, 158);
 }
@@ -12,7 +14,7 @@ body{
 .box-center{
     width: 50%;
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 30%;
 }
 
@@ -28,10 +30,23 @@ body{
     }
   }
 
-  /* .warning{
-      margin-top: 0.5rem;
-  } */
+  #warning{
+    font-family: 'Yusei Magic', sans-serif;
+    border: 2px solid red;
+    border-radius: 5px;
+  }
 
-  /* .warning-text{
-    margin-left:  1rem;
-  } */
+.animation-text, p{
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 1.5rem;
+}
+
+#text-content span{
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+#text-content .fade{
+    opacity: 1;
+    font-size: 2rem;
+}
