@@ -9,29 +9,29 @@ const button = document.getElementById('button');
 isHidden = HTMLElement.hidden;
 HTMLElement.hidden = true | false;
 
-    // button.addEventListener('click', function(){
-    //     setTimeout(function(){
-    //         percent.innerHTML = totalMoney.value * ( select.value / 100 );
-    //         totalAmount.innerHTML = +totalMoney.value + +( totalMoney.value * ( select.value / 100 ));
-    //         eachPersonsMoney.innerHTML = (+totalMoney.value + +( totalMoney.value * ( select.value / 100 ))) / eachPerson.value;
+
+    button.addEventListener('click', function(){
+          setTimeout(function(){
+            // console.log(totalMoney.value);
+            percent.innerHTML = totalMoney.value * ( select.value / 100 );
+            totalAmount.innerHTML = +totalMoney.value + +( totalMoney.value * ( select.value / 100 ));
+            eachPersonsMoney.innerHTML = (+totalMoney.value + +( totalMoney.value * ( select.value / 100 ))) / eachPerson.value;
         
             
-    //         document.getElementById('info').hidden = false;
-    //         totalMoney.value = "";
-    //         eachPerson.value = "";
-    //         select.value = "";
-    //     }, 3000);
-    // });
+            document.getElementById('info').hidden = false;
+            totalMoney.value = "";
+            eachPerson.value = "";
+            select.value = "";
+        }, 2000);
 
-    const mouseHoverAnimation = () => {
-        anime({
-            targets: button,
-            width: '100%',
-            scale: {
-                delay: 800,
-                value : 1.5
-            },
-            duration: 1500
-        });
-    }
-button.addEventListener('mouseover', mouseHoverAnimation());
+        setTimeout(function(){
+            document.getElementById('info').hidden = true;
+        },9000);
+    });
+
+
+// function myFunction(){
+//     console.log('gura');
+// }
+
+    
